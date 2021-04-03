@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Las Vegas Survey Form</title>
+
+
+</head>
+
+
+
+<body>
+    <h1 id="title " class="survey-title "><b>Visiting Las Vegas Survey Form</b></h1>
+    <p id="description " class="description survey-title ">
+        <b>Thank you for taking the time to help us improve the platform </b></p>
+
+    <div class="window-view">
+        <form id="survey-form ">
+            <div class="form-field ">
+                <label for="name " id="name-label ">Name</label>
+                <input type="text " name="name " id="name " class="form-data " placeholder="Enter your name " required>
+            </div>
+
+            <div class="form-field ">
+                <label for="email " id="email-label ">Email</label>
+                <input type="email " name="email " id="email " class="form-data " placeholder="Enter your email " required>
+            </div>
+
+            <div class="form-field ">
+                <label for="number " id="number-label ">Age
+                    <span class="options ">(Optional)</span>
+                </label>
+                <input type="number " name="age " id="number " min="18 " max="105 " class="form-data " placeholder="Age ">
+            </div>
+
+            <div class="form-field">
+                <p id="role">Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-data" required>
+                  <option disabled selected value>Select current role</option>
+                  <option value ="student">Student</option>
+                  <option>Full Time Job</option>
+                  <option>Part Time Job</option>
+                  <option>Retiree</option>
+                  <option>Homemaker</option>
+                  <option>Self Employed</option>
+                  <option>Prefer not to say</option>
+                  <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <p id="visit ">Would you recommend a visit to Las Vegas to a friend?</p>
+                <label>
+                    <input 
+                        name="recommendation" 
+                        value="no" 
+                        type="radio" 
+                        class="input-radio" 
+                        checked
+                    >
+                    No
+                </label>
+
+                <label>
+                    <input 
+                        name="recommendation" 
+                        value="not sure" 
+                        type="radio" 
+                        class="input-radio" 
+                        checked
+                    >
+                    Not Sure
+                </label>
+
+                <label>
+                    <input 
+                        name="recommendation" 
+                        value="maybe" 
+                        type="radio" 
+                        class="input-radio" 
+                        checked
+                    >
+                    Maybe
+                </label>
+
+                <label>
+                    <input 
+                        name="recommendation" 
+                        value="definitely" 
+                        type="radio" 
+                        class="input-radio" 
+                        checked
+                    >
+                    Definitely
+                </label>
+
+                <div class="form-field">
+                    <p id="favorite">What is your favorite thing about visiting Las Vegas?</p>
+                    <select id="favorites" name="favorites" class="form-data" required>
+                        <option disabled selected value>Select an option</option>
+                        <option>Gambling</option>
+                        <option>Shows</option>
+                        <option>Weather</option>
+                        <option>Dining</option>
+                        <option>Hotel Amenities</option>
+                        <option>Access to Sports(NFL, NHL, WBNA...etc.)</option>
+                        <option>Parks & Recreation</option>
+                        <option>Museums & Galleries</option>
+                        <option>Tours</option>
+                        <option>Travel Cost</option>
+                        <option>Other</option>
+                   </select>
+
+                    <div class="form-field">
+                        <p id="improve">What would you like to improve about Las Vegas?
+                            <span class="options"> (Check all that apply)</span>
+                        </p>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="safety" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >	
+                            Safety
+                        </label>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="cost" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >
+                            Cost
+                        </label>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="more attractions for kids" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >
+                            More Attractions for Kids
+                        </label>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="traffic" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >
+                            Traffic
+                        </label>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="more smoke free zones" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >
+                            More Smoke Free Zones
+                        </label>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="entertainment" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >
+                            Entertainment Options
+                        </label>
+
+                        <label>
+                            <input 
+                                name="improvement" 
+                                value="reduce resort fees" 
+                                type="checkbox" 
+                                class="input-checkbox"
+                            >
+                            Reduce Resort Fees
+                        </label>
+                    </div>
+
+                    <div class="form-field">
+                        <p id="suggestion">Please add any comments or suggestions below</p>
+                        <textarea id="coms" class="input-coms" name="comment" placeholder="Enter your comments or suggestions here...">
+                        </textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
