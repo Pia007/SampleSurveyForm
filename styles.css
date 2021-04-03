@@ -1,5 +1,5 @@
     @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
-    /*Setting the survey box size, globally, using the universal selector, *, and pseudo-elements*/
+   
     
     html {
         box-sizing: border-box;
@@ -31,7 +31,7 @@
         margin-bottom: 5px;
         padding-bottom: 10px;
     }
-    /* Making the body element a rectangle using the ::before pseudo element*/
+   
     
     body::before {
         content: '';
@@ -158,7 +158,7 @@
         border: 1px solid #ced3db;
         border-radius: 15px;
     }
-    /* Putting emphasis on the class form-field by using :focus pseudo class*/
+    
     
     .form-field:focus {
         border-color: #80bdff;
@@ -192,7 +192,6 @@
         border-radius: 15px;
         cursor: position;
     }
-    /*Adding animation when the user hovers over the submit button.*/
     
     .submit-button:hover {
         animation-name: background-color;
